@@ -17,6 +17,7 @@ final class StatusItemController: NSObject {
         self.timerState = timerState
         self.showSettings = showSettings
         self.statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+        self.statusItem.autosaveName = "Mater.StatusItem"
         self.timerPanel = TimerPanel(timerState: timerState, showSettings: showSettings)
         super.init()
 
